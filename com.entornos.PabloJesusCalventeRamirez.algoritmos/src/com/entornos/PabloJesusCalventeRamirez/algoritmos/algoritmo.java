@@ -13,8 +13,8 @@ public abstract class algoritmo {
 	/**
 	 * Calcula el número de fibonacci de manera iterativa
 	 * 
-	 * @param numero Numero introducido para calcular dicho factorial
-	 * @return el factorial
+	 * @param numero Introducido para calcular dicho factorial
+	 * @return el fibonacci del numero pasado por parametros
 	 */
 	public static int fibonacci(int numero) {
 		int siguiente = 1, actual = 0, temp = 0;
