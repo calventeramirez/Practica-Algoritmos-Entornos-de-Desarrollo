@@ -13,7 +13,7 @@ public abstract class algoritmo {
 	/**
 	 * Calcula el número de fibonacci de manera iterativa
 	 * 
-	 * @param numero Introducido para calcular dicho factorial
+	 * @param numero parametro para calcular dicho factorial
 	 * @return el fibonacci del numero pasado por parametros
 	 */
 	public static int fibonacci(int numero) {
@@ -25,21 +25,21 @@ public abstract class algoritmo {
 		}
 		return actual;
 	}
-	
+
 	/**
 	 * Calcula el factorial de un numero de manera iterativa
 	 * 
 	 * @param numero parametro para calcular el factorial
 	 * @return el factorial de un numero pasado por parametros
 	 */
-	public static int factorial (int numero) {
+	public static int factorial(int numero) {
 		int salida = 1;
-		for(int i = 2; i<=numero; i++) {
+		for (int i = 2; i <= numero; i++) {
 			salida *= i;
 		}
 		return salida;
 	}
-	
+
 	/**
 	 * Calcula si un numero es primo o no es primo
 	 * 
@@ -49,10 +49,10 @@ public abstract class algoritmo {
 	public static boolean primo(int numero) {
 		boolean primo = true;
 		int divisor = 2;
-		while((primo) && (divisor != numero)) {
-			if(numero % divisor == 0) {
+		while ((primo) && (divisor != numero)) {
+			if (numero % divisor == 0) {
 				primo = false;
-			}else {
+			} else {
 				divisor++;
 			}
 		}
