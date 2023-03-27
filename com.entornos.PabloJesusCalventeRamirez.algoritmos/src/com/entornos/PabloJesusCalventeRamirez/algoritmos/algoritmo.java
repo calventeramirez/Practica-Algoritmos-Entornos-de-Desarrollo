@@ -39,4 +39,23 @@ public abstract class algoritmo {
 		}
 		return salida;
 	}
+	
+	/**
+	 * Calcula si un numero es primo o no es primo
+	 * 
+	 * @param numero parametro a calcular si es primo o no
+	 * @return true si es primo, false si es falso
+	 */
+	public static boolean primo(int numero) {
+		boolean primo = true;
+		int divisor = 2;
+		while((primo) && (divisor != numero)) {
+			if(numero % divisor == 0) {
+				primo = false;
+			}else {
+				divisor++;
+			}
+		}
+		return primo;
+	}
 }
