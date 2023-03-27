@@ -25,4 +25,18 @@ public abstract class algoritmo {
 		}
 		return actual;
 	}
+	
+	/**
+	 * Calcula el factorial de un numero de manera iterativa
+	 * 
+	 * @param numero parametro para calcular el factorial
+	 * @return el factorial de un numero pasado por parametros
+	 */
+	public static int factorial (int numero) {
+		int salida = 1;
+		for(int i = 2; i<=numero; i++) {
+			salida *= i;
+		}
+		return salida;
+	}
 }
