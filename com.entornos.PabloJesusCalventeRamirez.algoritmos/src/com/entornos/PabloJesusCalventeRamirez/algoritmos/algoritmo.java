@@ -18,7 +18,7 @@ public abstract class algoritmo {
 	 */
 	public static int fibonacci(int numero) {
 		int siguiente = 1, actual = 0, temp = 0;
-		for (int i = 0; i <= numero; i++) {
+		for (int i = 1; i <= numero; i++) {
 			temp = actual;
 			actual = siguiente;
 			siguiente += temp;
@@ -32,7 +32,7 @@ public abstract class algoritmo {
 	 * @param numero parametro para calcular el factorial
 	 * @return el factorial de un numero pasado por parametros
 	 */
-	public static int factorial(int numero) {
+	public static long factorial(int numero) {
 		int salida = 1;
 		for (int i = 2; i <= numero; i++) {
 			salida *= i;
