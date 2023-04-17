@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.entornos.PabloJesusCalventeRamirez.array.test","l":"AllTests"},{"p":"com.entornos.PabloJesusCalventeRamirez.array","l":"MisArrays"}];updateSearchResults();
