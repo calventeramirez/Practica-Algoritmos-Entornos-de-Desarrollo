@@ -42,9 +42,10 @@ public abstract class MisArrays {
 		}
 		return med;
 	}
-	
+
 	/**
 	 * Calcula el numero maximo de un array
+	 * 
 	 * @param array Array de numeros
 	 * @return Maximo del array
 	 */
@@ -56,5 +57,21 @@ public abstract class MisArrays {
 			}
 		}
 		return max;
+	}
+
+	/**
+	 * Calcula el numero minimo de un array
+	 * 
+	 * @param array Array de numeros
+	 * @return Minimo del array
+	 */
+	public static int minimo(int[] array) {
+		int min = array[0];
+		for (int i = 1; i < array.length; i++) {
+			if (min > array[i]) {
+				min = array[i];
+			}
+		}
+		return min;
 	}
 }
