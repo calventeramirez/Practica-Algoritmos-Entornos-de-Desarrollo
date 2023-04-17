@@ -1,5 +1,7 @@
 package com.entornos.PabloJesusCalventeRamirez.array;
 
+import java.util.Arrays;
+
 /**
  * 
  * @author Pablo Jesús Calvente Ramírez
@@ -19,4 +21,26 @@ public abstract class MisArrays {
 		}
 		return sum / array.length;
 	}
+
+	/**
+	 * Calcula la mediana de la lista pasada por parametros. Si es impar se
+	 * seleccionara el elemento que este justo en medio y si es par se calcula la
+	 * media de los dos numeros centrales
+	 * 
+	 * @param array Array de numeros
+	 * @return mediana del array
+	 */
+	public static double mediana(int[] array) {
+		Arrays.sort(array);
+
+		double med = 0.0;
+		int mitad = array.length / 2;
+		if (array.length % 2 == 0) {
+			med = (array[mitad - 1] + array[mitad]) / 2;
+		} else {
+			med = array[mitad];
+		}
+		return med;
+	}
+	
 }
